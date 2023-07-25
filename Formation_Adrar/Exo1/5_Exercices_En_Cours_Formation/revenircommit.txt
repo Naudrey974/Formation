@@ -1,2 +1,7 @@
 texte à effacer
+<<<<<<< HEAD
 modif2 raté
+=======
+texte 3eme modif
+>>>>>>> a9b3eac958e75596244a01b2fe9efd8fcdfc72ca
+texte modif4
