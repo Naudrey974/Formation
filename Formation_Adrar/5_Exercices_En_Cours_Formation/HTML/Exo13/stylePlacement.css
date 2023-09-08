@@ -1,0 +1,26 @@
+fieldset{
+    border: solid black; 
+    height: 250px;
+    width: 400px;
+    background: rgb(212, 210, 210);
+}
+h1, div:last-child{
+    text-align: center;
+}
+div:nth-child(1n+1){
+    margin-left: 30px;
+    padding: 8px;
+}
+label{
+    margin-right:20px;
+}
+#checkbox{
+    margin-right:10px;
+}
+#bouton{
+    margin-top: 20px;
+    padding: 5px;
+}
+input[type="submit"]{
+    margin-right: 5px;
+}

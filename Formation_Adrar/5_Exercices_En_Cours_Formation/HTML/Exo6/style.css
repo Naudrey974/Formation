@@ -1,0 +1,31 @@
+h1{
+    color:red;
+    text-align: center;
+    font-size: 3em;
+}
+h3{
+    color:blue;
+    font-size: 2em;
+}
+.paragraphe{
+    background-color: grey;
+}
+p{
+    background-color: pink;
+}
+strong{
+    font-weight: normal;
+    color:greenyellow;
+}
+em{
+    font-style: normal;
+    text-decoration: underline;
+    font-size: 1.5em;
+    color:orangered;
+    
+}
+#titre2{
+    color:green;
+    text-decoration: underline;
+    text-align: right;
+}

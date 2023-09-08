@@ -1,0 +1,36 @@
+
+caption{
+    color:purple;
+    font-weight:bold;
+}
+#Tableau1{
+    border-width: 2px;
+    border:double purple;
+    border-collapse:collapse;
+    text-align:center
+}
+tr:first-child{
+    background-color: rgb(35, 116, 116);
+    
+}
+td, th{
+    border:1px solid black;
+}
+
+#Tableau2 caption{
+    color:black;
+    font-style:italic;
+    background-color:bisque;
+    border-style:dotted;
+    font-family:'Lucida Sans';
+} 
+#Tableau2{
+    border:1px solid black;
+    border-collapse:collapse;
+    text-align:center;
+    background:radial-gradient(gold, rgb(51, 212, 51));
+    box-shadow: 15px 20px 6px pink;
+}
+#titreTableau{
+    background-color:goldenrod;
+}

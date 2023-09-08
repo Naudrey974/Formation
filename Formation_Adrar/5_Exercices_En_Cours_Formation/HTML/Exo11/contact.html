@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styleTP.css">
+</head>
+<body>
+    <header>
+        <img src="banniere.jpg" alt="paysage"><br>
+        <h1>Bienvenu sur mon site!</h1>
+        <nav>
+        <ul>
+            <li><a href="file:///C:/Users/cyberdev/Desktop/Audrey/Git_Exo/Formation_Adrar/5_Exercices_En_Cours_Formation/HTML/Exo11/index.html">Accueil</a></li>
+            <li><a href="file:///C:/Users/cyberdev/Desktop/Audrey/Git_Exo/Formation_Adrar/5_Exercices_En_Cours_Formation/HTML/Exo11/index.html#blog">Blog</a></li>
+            <li><a href="">Galerie</a></li>
+            <li><a href="file:///C:/Users/cyberdev/Desktop/Audrey/Git_Exo/Formation_Adrar/5_Exercices_En_Cours_Formation/HTML/Exo11/contact.html">Contact</a></li>
+        </ul>
+        </nav>
+    </header>
+    <section>
+        <form methode="POST" action="fauxphp.php"></form>
+        <fieldset>
+            <legend>Contact</legend>
+            <div>
+                <label for="name">Nom:</label> 
+                <input required type="text" name="nom" id="name" maxlength="20" minlength="2" placeholder="Ex:Robert">
+            </div>
+            <div>
+                <label for="email">E-mail</label>
+                <input required type="email" name="email" id="email" placeholder="Ex:xxx@xxxx.fr">
+            </div>
+            <div>
+                <label for="textarea">Laissez un commentaire</label>
+            </div>
+            <div>
+                <textarea placeholder="Je dépose mon commentaire" rows="10" cols="70"></textarea>
+            </div>
+            <div>
+            <input type="checkbox" checked id="checkbox"/><label for="checkbox">Envoyer une copie par E-mail!</label>
+            </div>
+            <div>
+                <input type="submit" value="Envoyer">
+                <input type="reset" value="Reset">
+            </div>
+        </fieldset>
+    </section>
+    <footer>
+        <ul>
+            <li><a href="">Menu1</a></li>
+            <li><a href="">Menu2</a></li>
+            <li><a href="">Menu3</a></li>
+            <li><a href="">Menu4</a></li>
+        </ul>
+    </footer>
+    
+</body>
+</html>

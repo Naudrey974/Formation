@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form methode="POST" action="">
+        <fieldset>
+            <legend>Info personnelle</legend>
+            <div>
+                <label for="prenom">Prénom:</label>
+                <input type="text" name="prenom" placeholder="Ex: Jacques" maxilength="20" minlenght="2" id="prenom">
+            </div>
+            <div>
+                <label for="name">Nom:</label>
+                <input type="text" name="nom" placeholder="Ex: Dubois" maxilength="20" minlenght="2" id="name">  
+            </div>
+            <div>
+                <label for="email">E-mail:</label>
+                <input type="email" name="email" placeholder="Ex: monMail@FAI.com" id="email">
+            </div>
+            <div>
+                <label for="tel">Numéro:</label>
+                <input type="tel" name="telephone" placeholder="Ex: 00.11.22.33.44" id="tel">
+            </div>
+            <div>
+                <label for="password">Mot de passe:</label>
+                <input type="password" name="password" placeholder="EX:P@motDePasse" minlength="8" maxlength="30" id="password">
+            </div>
+            <div>
+                <label for="age">Age:</label>
+                <input type="number" name="age" placeholder="Ex:25" min="18" id="age">
+            <div>
+                <label for="textarea">Laissez un commentaire</label>
+            </div>
+                <textarea placeholder="Je note mon com." rows="10" cols="70"></textarea>
+            <div>
+            <label for="date">Date de mon commentaire</label>
+            <input id="date" type="date"/>
+        </div>
+        <div>
+        <label for="file">Ma photo</label>
+        <input type="file" accept=".png, .jpg, .gif">
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend>Je suis une légende</legend>
+        <div>
+        <input type="checkbox" checked id="checkbox1"/><label for="checkbox1">Le HTML</label>
+    </div>
+    <div>
+        <input type="checkbox" id="checkbox2"/><label for="checkbox2">Le CSS</label>
+    </div>
+    <div>
+        <input type="checkbox" id="checkbox3"/><label for="checkbox3">Le Javascript</label>
+    </div>
+    <div>
+        <input type="checkbox" id="checkbox4"/><label for="checkbox4">Le Ne rien faire</label>
+    </div>
+    </fieldset>
+    <fieldset>
+        <legend>Vous vous levez</legend>
+        <div>
+            <input type="radio" checked id="radio1" name="radio" value="radio1"><label for="radio1">Le matin</label>
+        </div>
+        <div>
+            <input type="radio" id="radio2" name="radio" value="radio2"><label for="radio2">Le midi</label>
+        </div>
+        <div>
+            <input type="radio" id="radio3" name="radio" value="radio3"><label for="radio3">En retard</label>
+        </div>
+        <div>
+            <input type="radio" id="radio4" name="radio" value="radio4"><label for="radio4">Du bon pied</label>
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend>Fin du formulaire</legend>
+        <label for="liste">Vous en avez</label>
+        <select name="liste" id="liste">
+            <optgroup label="J'ai compris">
+            <option selected value="choix1">Assez</option>
+            <option value="choix2">Trop</option>
+        </optgroup>
+        <optgroup label="Pourquoi pas">
+            <option value="choix3">Peu</option>
+            <option value="choix4">Stop</option>
+        </optgroup>
+        </select>
+        <div>
+        <input type="submit" value="envoyer">
+        <input type="reset" value="reset">
+        </div>
+    </fieldset>
+</form>
+</body>
+</html>

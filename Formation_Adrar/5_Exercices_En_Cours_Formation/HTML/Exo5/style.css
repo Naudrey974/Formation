@@ -1,0 +1,16 @@
+#contenu1{
+    text-align:right;
+    font-size:2em;
+}
+#contenu{
+    background-color: grey;
+}
+a{
+    color:greenyellow;
+}
+h1{
+    color:red;
+}
+img [alt="image du lundi"]{
+    text-align:center;
+}
