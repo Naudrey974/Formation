@@ -1,0 +1,8 @@
+#conteneur{
+    display:flex;
+    justify-content: center;
+}
+#bouton{
+    display:flex;
+    flex-direction: row;
+}
