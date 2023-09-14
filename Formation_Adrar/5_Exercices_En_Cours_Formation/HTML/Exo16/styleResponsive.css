@@ -1,8 +1,53 @@
+/*@media (min-width: 600px){#conteneur{
+    display:flex;
+    justify-content: space-around;
+    
+}  
+} 
+@media (min-width: 600px){.article img{
+    align-self: center;
+    width: 30%;
+    height: 30%;
+}
+}*/
+
+/*@media (max-device-width: 800px){
+    header img{
+        width: 50%;
+        height: 50%;
+    }
+}*/
+
 #conteneur{
     display:flex;
-    justify-content: center;
+    justify-content: space-around;
+    
+}  
+.article{
+    border: solid 1px black;
+    padding: 5px;
+    width: 30%;    
+    background-color: pink;
+  
+    
 }
-#bouton{
+.article img{
+    align-self: center ;
+}
+p{
+    width: 90%;
+    height: auto;
+}
+
+nav{
     display:flex;
-    flex-direction: row;
+    justify-content:center;
+    background-color: red;
+    justify-content: space-evenly;
+}
+.menu{
+    
+    background-color: yellow;
+    list-style-type: none;
+    display:flex;  
 }
