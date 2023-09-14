@@ -1,0 +1,113 @@
+/* HEADER */
+body {
+  margin: 0;
+  padding: 0;
+}
+nav {
+  display: grid;
+  grid-template-columns: 10% 80%;
+  gap: 50px;
+}
+nav img {
+  width: 50px;
+  margin: 10px 0 0 40px;
+}
+.styleList {
+  list-style: none;
+  font-size: 1.2em;
+  margin: 0;
+}
+.accesFlex {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  justify-content: end;
+  align-items: end;
+  height: 60px;
+}
+a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+a:hover {
+  text-decoration: underline;
+  color: rgb(247, 107, 107);
+}
+
+/* SECTION */
+
+legend {
+  padding: 3px;
+  border: solid blue;
+  border-radius: 10px;
+  background-color: #f9fbff;
+}
+form {
+  margin: auto;
+}
+fieldset {
+  margin-left: auto;
+  margin-right: auto;
+  border: solid blue;
+  width: min-content;
+  text-align: center;
+  border-radius: 15px;
+  background-color: #53b9e7;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 30px 30px 1fr 30px 30px 30px;
+}
+#nomPrenom {
+  text-align: left;
+  grid-column: 1 2;
+  grid-row: 1;
+}
+#contact {
+  text-align: left;
+  grid-column: 1 2;
+  grid-row: 2;
+}
+#message {
+  text-align: left;
+  grid-column: 1 2;
+  grid-row: 3;
+}
+#langage {
+  text-align: left;
+  grid-column: 1 2;
+  grid-row: 4;
+}
+#photo {
+  text-align: left;
+  grid-column: 1 2;
+  grid-row: 5;
+}
+#envoyer {
+  text-align: left;
+  grid-column: 1 2;
+  grid-row: 6;
+}
+
+/* FOOTER */
+footer {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 30px;
+  background-color: #f9fbff;
+}
+
+footer div:first-child {
+  margin-right: 70px;
+}
+
+footer ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+footer div:last-child {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}

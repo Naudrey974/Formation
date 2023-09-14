@@ -1,0 +1,156 @@
+/* HEADER */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+nav {
+  display: grid;
+  grid-template-columns: 10% 80%;
+  gap: 50px;
+}
+nav img {
+  width: 50px;
+  margin: 10px 0 0 40px;
+}
+ul {
+  list-style: none;
+  font-size: 1.2em;
+  margin: 0;
+}
+.accesFlex {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  justify-content: end;
+  align-items: end;
+  height: 60px;
+}
+a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+a:hover {
+  text-decoration: underline;
+  color: rgb(247, 107, 107);
+}
+
+#intro {
+  width: 100%;
+  height: 50vh;
+  background-image: url(img/gens-affaires-creatifs-ecoute-collegue.jpg);
+  background-size: 100%;
+  background-position: 0px -80px;
+  display: grid;
+  grid-template-columns: 50px repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+}
+
+#intro div {
+  background-color: rgba(255, 255, 255, 0.407);
+  grid-column: 2 / span 2;
+  grid-row: 2 / span 3;
+  padding: 25px;
+}
+
+/* MAIN */
+main {
+  padding-bottom: 50px;
+}
+
+.sizeSection {
+  width: 80%;
+  margin: auto;
+}
+
+#etude {
+  height: 300px;
+  padding-top: 10px;
+}
+#etude img {
+  width: 20%;
+}
+h2 {
+  text-align: center;
+}
+
+#formations,
+#ville {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  row-gap: 30px;
+}
+
+#formations div:nth-child(even) {
+  background-color: #81b53e;
+}
+#formations div:nth-child(odd) {
+  background-color: #53b9e7;
+}
+
+.formSize {
+  display: flex;
+  flex-direction: row;
+  width: 30%;
+  height: 80px;
+  background-color: white;
+  border-radius: 15px;
+  justify-content: start;
+  align-items: center;
+  gap: 30px;
+  font-weight: bold;
+}
+
+#secLang {
+  background-color: #f9fbff;
+}
+
+#langage {
+  padding: 40px 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#langage div:first-child {
+  width: 45%;
+}
+
+#ville div:nth-child(even) {
+  background-color: #f69e07;
+}
+
+#ville div:nth-child(odd) {
+  background-color: #e44332;
+}
+
+#ville img {
+  width: 10%;
+  margin-left: 15px;
+}
+
+/* FOOTER */
+footer {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 30px;
+  background-color: #f9fbff;
+}
+
+footer div:first-child {
+  margin-right: 70px;
+}
+
+footer ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+footer div:last-child {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}

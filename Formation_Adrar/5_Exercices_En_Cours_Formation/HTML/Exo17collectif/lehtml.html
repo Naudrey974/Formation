@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styleAudrey.css">
+    <link rel="stylesheet" href="styleChristopher.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div>
+                <a href="index.html">
+                    <img src="img/Logo.svg" alt="Logo du centre de formation ADRAR">
+                </a>
+            </div>
+            <div>
+                <ul id="acces" class="styleList accesFlex">
+                    <li><a href="#">Nos Formations</a></li>
+                    <li><a href="lehtml.html">Le HTML</a></li>
+                    <li><a href="lecss.html">Le CSS</a></li>
+                    <li><a href="lejavascript.html">Le Javascript</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+
+    <H1>HTML</H1>
+
+    <article>
+        <h2>Un langage à balises</h2>
+        <div class="article">
+            <h3>Notions de balises</h3>
+            <p>HTML est un format textuel,
+                il peut donc être édité dans n'importe quel éditeur de texte.
+                Le texte normal sera affiché tel quel.
+                Les balises sont des codes, qui ne sont pas affichés tels quels, mais servent à indiquer le rôle du
+                texte balisé,
+                et donc indirectement comment il sera présenté.Tout texte entre les chevrons (en anglais brackets) < et>
+                    est considéré une balise
+                    <em> est une balise ouvrante, </em> est la balise fermante qui lui correspond; elles délimitent le
+                    texte concerné.On peut appliquer plusieurs balises au même texte, à condition de respecter la règle
+                    d'emboîtement :
+                    toute balise B ouverte à l'intérieur d'une balise A doit également être fermée à l'intérieur de
+                    A.Certaines balises, en plus du contenu textuel qu'elles délimitent, ont besoin d'information
+                    supplémentaire (mais qui n'apparaîtra pas dans le document).
+                    Cette information est donnée par des attributs, qui ont la forme nom=valeur et sont placés entre les
+                    chevrons de la balise ouvrante, après son nom.</p>
+
+            <div id="ExImage">
+                <div class="PlacementImg" id="ExHtml">
+                    <h4>Exemples dans le html:</h4>
+                    <img src="ExGrandTitreCode.png" alt="exemple de code html">
+                </div>
+                <div class="PlacementImg" id="ExWeb">
+                    <h4>Exemple dans le navigateur:</h4>
+                    <img src="ExGrandTitreWeb.png" alt="exemple affichage navigateur">
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <article>
+        <h2>Structure d'un document</h2>
+        <div class="article">
+            <h3>Structure global</h3>
+            <p>La 1ère ligne indique la version de HTML (ici, HTML5).
+                L'attribut lang indique la langue utilisée à l'aide d'un code spécifié par BCP47.
+                Tout document html comprend deux parties.
+                La tête < head> contient les méta-données, qui ne sont pas directement affichées :
+                    le titre (< title>) est obligatoire,
+                        l'indication d'encodage (ligne 5) est facultative, mais recommandée
+                        Le corps (< body>) contient le contenu à proprement parler du document.NB : l'attribut lang peut
+                            en fait être utilisé sur n'importe quelle balise, y compris dans le corps (< body>) du
+                                document.</p>
+
+            <div id="ExImage">
+                <div class="PlacementImg" id="ExHtml">
+                    <h4>Exemple de structure de base:</h4>
+                    <img src="ImgStructure.png" alt="exemple de code html">
+                </div>
+            </div>
+
+
+        </div>
+    </article>
+
+
+    <footer>
+
+        <div>
+            <ul id="acces" class="styleList">
+                <li><a href="#">Nos Formations</a></li>
+                <li><a href="lehtml.html">Le HTML</a></li>
+                <li><a href="lecss.html">Le CSS</a></li>
+                <li><a href="lejavascript.html">Le Javascript</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div>
+            <p>
+                &copy; Team 2
+            </p>
+            <p><a href="#">Mentions Légales </a> | <a href="#">Vie privée</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styleRomaric.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div>
+                <a href="index.html">
+                    <img src="img/Logo.svg" alt="Logo du centre de formation ADRAR">
+                </a>
+            </div>
+            <div>
+                <ul id="acces" class="styleList accesFlex">
+                    <li><a href="#">Nos Formations</a></li>
+                    <li><a href="lehtml.html">Le HTML</a></li>
+                    <li><a href="lecss.html">Le CSS</a></li>
+                    <li><a href="lejavascript.html">Le Javascript</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+    <section>
+        <form action="" method="post">
+            <fieldset>
+                <legend>Nous contacter</legend>
+                <div id="nomPrenom">
+                    <label for="firstname">Prénom: </label>
+                    <input type="text" name="Prénom" maxlength="20" minlength="2" placeholder="Prénom" required />
+                    <label for="name">Nom: </label>
+                    <input type="text" name="Nom" maxlength="20" minlength="2" placeholder="Nom" required />
+                </div>
+                <div id="contact">
+                    <label for="email">E mail: </label>
+                    <input type="text" name="E mail" placeholder="xxxxxxx@mail.com" required />
+                    <label for="phoneNumber">Numéro de téléphone: </label>
+                    <input type="text" name="phoneNumber" placeholder="06.06.06.06.06" required />
+                </div>
+                <div id="message">
+                    <label for="commentaire">Votre message: </label>
+                    <br>
+                    <textarea name="commentaire" placeholder="votre message ici" required rows="15"
+                        cols="80"></textarea>
+                </div>
+                <div id="langage">
+                    <label for="sujet">Quel est l'objet de votre messages :</label>
+                    <select name="objet" id="objet">
+                        <option>HTML</option>
+                        <option>CSS</option>
+                        <option>JavaScript</option>
+                        <option>Autre</option>S
+                    </select>
+                </div>
+                <div id="photo">
+                    <label for="envoiePhoto">Ajouter une photo: </label>
+                    <input type="file" name="file" placeholder="Aucun fichier choisis" required />
+                </div>
+                <div id="envoyer">
+                    <input type="checkbox" name="conditionGeneral" id="conditionGeneral">
+                    <label for="conditionGeneral">J'accepte les conditions générales d'utilisation</label>
+                    <input type="submit" name="Envoyer" id="envoyer">
+                </div>
+            </fieldset>
+    </section>
+
+
+    <footer>
+        <div>
+            <ul id="social" class="styleList accesFlex">
+                <li><a href=""><img src="img/fb.svg" alt></a></li>
+                <li><a href=""><img src="img/linkedIn.svg" alt=""></a></li>
+                <li><a href=""><img src="img/twitt.svg" alt=""></a></li>
+            </ul>
+        </div>
+        <div>
+            <ul id="acces" class="styleList">
+                <li><a href="#">Nos Formations</a></li>
+                <li><a href="lehtml.html">Le HTML</a></li>
+                <li><a href="lecss.html">Le CSS</a></li>
+                <li><a href="lejavascript.html">Le Javascript</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div>
+            <p>
+                &copy; Team 2
+            </p>
+            <p><a href="#">Mentions Légales </a> | <a href="#">Vie privée</a></p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

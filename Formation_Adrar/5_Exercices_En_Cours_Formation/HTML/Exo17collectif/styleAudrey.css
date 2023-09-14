@@ -1,0 +1,42 @@
+h1 {
+ 
+  background-color: rgb(113, 112, 112);
+  color:white;
+  height: 100px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+article {
+  text-align: left;
+  margin: 2em;
+  padding: 2em;
+}
+p {
+  text-align: justify;
+}
+h4 {
+  text-align: left;
+  font-weight: 800;
+}
+
+img {
+  width: 400px;
+  height: 300px;
+}
+#ExImage {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: rgb(113, 112, 112);
+}
+
+.PlacementImg {
+  padding: 1em;
+  color:white;
+  
+}
+.article{
+  margin-top: 75px;
+}
