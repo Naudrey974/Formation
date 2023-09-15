@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  </head>
+
+  <body>
+<!--créer un message d'alerte-->
+     <h1>Alerte!!!</h1>
+     <div class="alert alert-primary alert-dismissible fade show" role="alert">
+        <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+<!--les différents container--> 
+      <div class="container">
+        <div class="border border-info">
+            Hello container
+        </div>
+      </div>
+      
+      <div class="container-md">
+        <div class="border border-info">
+            Hello container-md
+        </div>
+      </div>
+      <div class="container-lg">
+        <div class="border border-info">
+            Hello container-l
+        </div>
+      </div>
+      <div class="container-xl">
+        <div class="border border-info">
+            Hello container-xl
+        </div>
+      </div>
+      
+      <div class="container-fluid">
+        <div class="border border-info">
+            Hello container-fluid
+        </div>
+        </div>
+<br>
+<!--répartition des colonne (max)-->
+        <div class="container border border-info">
+            <div class="row">
+                <div class="col-9 bg-warning">col 1</div>
+                <div class="col-3 bg-primary">col 2</div>
+            </div>
+        </div>
+<br>
+<!--détail système CRC (content row column)-->
+        <div class="container">
+            <div class="row"> <!--la première colonne fait 12 donc automatique celle de 6 passe en dessous. Il est possible de realiser ce tabeau en utilisant 3 rows-->
+              <div class="col-12 border border-primary">12</div>
+              <div class="col-6 border border-primary">6</div>
+            </div>
+        </div>                            
+              <div class="container">
+                <div class="row">  
+                <div class="col-3 border border-primary">3</div>
+                <div class="col-3 border border-primary">3</div>
+                <div class="col-6 border border-primary">6</div>
+            </div>               
+        </div> 
+<br>
+<!--flex-box avec bootstrap-->
+<div class="container">
+    <div class="row card">
+        <div class="col-4 bg-danger align-self-start">colonne1</div>         
+        <div class="col-4 bg-danger align-self-center">colonne2</div>      
+        <div class="col-4 bg-danger align-self-end ">colonne3</div>   
+    </div>
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  </body>
+</html>
