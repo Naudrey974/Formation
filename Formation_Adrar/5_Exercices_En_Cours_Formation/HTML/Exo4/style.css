@@ -1,0 +1,15 @@
+ul {
+  background-color: rgb(248, 248, 165);
+}
+ul li {
+  font-family: "Franklin Gothic Medium";
+}
+
+ol {
+  font-family: Impact;
+}
+
+body h1, body h3, body h4 {
+  border: 2px solid rgb(175, 233, 41);
+  text-align: center;
+}/*# sourceMappingURL=style.css.map */
