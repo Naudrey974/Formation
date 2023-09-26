@@ -62,18 +62,18 @@ function bob(a,b,c) {
 
 function calcul(a) {
 	let aaa=1;
-	for(let i=2; i<=a; i++) {
+	for(let i=2; i<=a; i++) { //pour i qui va de 2 à a : aaa*-i//
 		aaa *= i;
 		// aaa = aaa*i;
 	}
 	return aaa;
 }
 
-function python(a) {
+function python(a) {   //fonction recursive car on utilise python pour calculer python//
 	let monResultat;
 	if(a<2) {
 		monResultat = 1;
-	} else {
+	} else { //le "else" est facultatif, si il n'est pas préciser ça équivaut à sinon=rien//
 		monResultat = a*python(a-1);
 	}
 	return monResultat;
@@ -81,8 +81,8 @@ function python(a) {
 
 function erogahtyp(a) {
 	let x;
-	if(a%2 == 0) {
-		x = a/2;
+	if(a%2 == 0) {  //== représente le égale mathématique, pour a% aller dans la console, et taper a%2 :le résultat s'affiche//
+		x = a/2;	//a%2 équivaut à "si 'a' est paire"//
 	}
 	else {
 		x = 3*a+1;
@@ -98,10 +98,10 @@ function pythagore(a,b) {
 	return result;
 }
 
-function aceeilnrtt(a) {
+function aceeilnrtt(a) { //1!=2 calcul dont le résult est vrai. 1+1 !=2 calcul dont le résult est faux//
 	let tluser = 0;
 	let v = a;
-	while(v != 1) {
+	while(v != 1) { //while au sens que "tant que" , while(condition)//
 		v = erogahtyp(v);
 		tluser++;
 	}
