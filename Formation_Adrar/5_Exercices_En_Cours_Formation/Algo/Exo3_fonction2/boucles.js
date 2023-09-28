@@ -154,7 +154,7 @@ for( let i=0; i<=9; i++){
 
 //Autre correction
 ////for( let i=0; i<=9; i++){
-//    if(i==5|| i==6 || i==7){
+//    if(i==5|| i==6 || i==7){  Pour écrire "OU" on utilise les ||. 
 //        console.log("A");
 //          }else{
 //              console.log(i);
@@ -196,16 +196,23 @@ for( let i=0; i<=9; i++){
 // 9
 console.log("Exercice 9");
 for( let i=0; i<=9; i++){
-    if(i%3==0){
+    if(i%3==0){         //applique directement sur le modulo
         console.log(i);
     }else{
-        if(i%3==1){
+        if(i%3==1){        // applique sur le chiffre qui suit le modulo donc modulo==1
             console.log(i+100);
-        }else{
+        }else{             // applique sur le reste donc le 2ème chiffre qui suit le  modulo, modulo==2
             console.log(i+200);
         }
     }
 }
+
+// correction en plus court
+//for( let i=0; i<10 ; i++){
+//  console.log(i +(i%3)*100); Ca fonctionne car la suite est une incrémentation logique: 0/+100/+200. Impossible si pas dans l'ordre.
+//}
+
+
 // Exercice 10 : écrire dans la console tous les résultats possibles de lancers de deux dés :
 // 1 1
 // 1 2
@@ -215,9 +222,7 @@ for( let i=0; i<=9; i++){
 // 6 5
 // 6 6
 console.log("Exercice 10");
-for( let i=1; i<=6; i++){
 
-}
 
 // Exercice 11 : adapter l'exercice précédent pour enlever les doublons (on ne veut pas afficher 1 2 et 2 1, mais seulement l'un des deux).
 console.log("Exercice 11");
