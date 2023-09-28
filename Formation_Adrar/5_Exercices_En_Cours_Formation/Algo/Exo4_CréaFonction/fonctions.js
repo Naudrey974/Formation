@@ -70,28 +70,28 @@ function f7(nb1,nb2){
 
 // Écrire une fonction f8 qui prend trois nombres en entrée et qui retourne le plus grand des trois.
 // (Au moins deux versions possibles : sans utiliser f7, et en utilisant f7).
-
+/*
 function f8(nb1, nb2,nb3 ){
-    if((nb1>nb2) && (nb1>nb3)){
+    if((nb1=>nb2) && (nb1>=nb3)){  //utiliser => permet d'éviter les erreurs si 2 nombres on la même valeur
         return nb1;
-    }else if((nb2> nb1) && (nb2>nb3)){
-        return nb2
+    }else if((nb2=> nb1) && (nb2>=nb3)){
+        return nb2;
     }else{
         return nb3;
     }
 }   
-/*
+*/
 function f8(nb1, nb2, nb3 ){
-    if(nb1>f7()){
+    if(nb1=>f7()){
         return nb1;
-    }else if(nb2> f7()){
+    }else if(nb2=> f7()){
         return nb2
     }else{
         return nb3;
     }
 }    
-*/
-console.log(f8(4,4,4));
+
+console.log(f8(8,4,9));
 
 // Écrire une fonction f9 qui prend un nombre et un mot en entrée, et qui affiche dans la console ce mot ce nombre de fois.
 
