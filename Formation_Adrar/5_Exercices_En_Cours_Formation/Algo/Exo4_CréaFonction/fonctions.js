@@ -81,22 +81,22 @@ function f8(nb1, nb2,nb3 ){
     }
 }   
 */
-function f8(nb1, nb2, nb3 ){
-    if(nb1=>f7()){
-        return nb1;
-    }else if(nb2=> f7()){
-        return nb2
-    }else{
-        return nb3;
-    }
-}    
 
+function f8(nb1, nb2, nb3){
+    let maxNb1Nb2= f7(nb1, nb2);
+    return f7(maxNb1Nb2,nb3);
+}
+
+/* ou
+function f8(nb1, nb2, nb3){
+    retur f7( f7(nb1,nb2),nb3)
+}
+*/
 console.log(f8(8,4,9));
 
 // Écrire une fonction f9 qui prend un nombre et un mot en entrée, et qui affiche dans la console ce mot ce nombre de fois.
 
 function f9(number, name){
-  
 for (let i=0; i<number; i++){
     console.log(name);
 }
