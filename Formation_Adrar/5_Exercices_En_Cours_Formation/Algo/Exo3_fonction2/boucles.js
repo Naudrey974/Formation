@@ -215,9 +215,22 @@ for( let i=0; i<=9; i++){
 // 6 5
 // 6 6
 console.log("Exercice 10");
-for( let i=1; i<=6; i++){
-
+let j=0
+for( let i=1; i<=6;i++){
+    console.log(i);
+    //console.log(j++)
 }
+
+/*for( let i=0; i<=6; i++){
+}
+for( let i=0; i<=6; i++){
+}
+for( let i=0; i<=6; i++){
+}
+for( let i=0; i<=6; i++){
+}
+for( let i=0; i<=6; i++){
+}*/
 
 // Exercice 11 : adapter l'exercice précédent pour enlever les doublons (on ne veut pas afficher 1 2 et 2 1, mais seulement l'un des deux).
 console.log("Exercice 11");
@@ -231,7 +244,7 @@ console.log("Exercice 12");
 // 1x1 = 1
 // 1x2 = 2
 // 1x3 = 3
-// 1x4 = 4
+// 1x4 =4
 // 1x5 = 5
 // 1x6 = 6
 // 1x7 = 7
