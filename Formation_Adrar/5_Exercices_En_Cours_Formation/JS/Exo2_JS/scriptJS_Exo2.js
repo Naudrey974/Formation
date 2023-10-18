@@ -1,3 +1,4 @@
+//Exo 7 Tableau
 /*let nb1=prompt("saisir nombre 1");
 let nb2=prompt("saisir nombre 2");
 let nb3=prompt("saisir nombre 3");
@@ -15,6 +16,8 @@ if([0]<[1] && [1]<[2]){
     console.log("Les valeurs ne sont pas triées dans l/'ordre croissant")
 }
 */
+//------------------------------
+//Exo 8 Tableau
 
 /*let nom=prompt("saisir nom produit");
 let prix=parseFloat(prompt("saisir un prix HT"));
@@ -33,7 +36,8 @@ console.log(tableau)
 
 console.log(`le prix ttc est :${Math.round(tableau[3])}€`); //Math.round : pour faire un arrondie
 */
-
+//-------------------------------------
+// Exo 9 Tableau et boucle
 let users=[];
     for(let i=0;i<2; i++){
         let user = {
@@ -49,7 +53,7 @@ let users=[];
     let young=users[0].age
     let indice=0
     for(let i=0; i<users.length; i++){
-    if(users[i].age<users[i++].age){
+    if(users[i].age<young){
         young=users[i].age;
         indice=i;
     }
