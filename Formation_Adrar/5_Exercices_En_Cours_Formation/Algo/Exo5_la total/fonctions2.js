@@ -26,7 +26,7 @@ function countDown(n1){
     }
 }
 
-countDown(10);
+countDown(3);
 /*
 Écrire une fonction fastCountDown qui reçoit un nombre en entrée et qui affiche un compte à rebours en partant de cette valeur. La valeur sera divisée par 2 à chaque fois, et le compte à rebours s'arrête quand la valeur devient inférieur à 0.1.
 Par exemple, l'appel à `fastCountDown(3)` devra afficher
@@ -37,9 +37,10 @@ Par exemple, l'appel à `fastCountDown(3)` devra afficher
 0.1875
 */
 function fastCountDown(n1){
-    while(n1>0.1){
-        console.log(n1);
-        n1/=2;
+   let counter=n1
+    while(counter>0.1){
+        console.log(counter);
+        counter/=2;
     }
 }
 fastCountDown(3)
@@ -51,16 +52,28 @@ Par exemple, l'appel à `evenNumbers(5,14)` devra afficher
 10
 12
 */
-function evenNumbers(nb1,nb2){
-    let a=nb1+=1;
-        while((a>nb1)&&(a<nb2)){
-                
-            return a%2;
+/*function evenNumbers(nb1,nb2){
+for (let i=nb1 ; i<nb2; i++){
+    if(i%2==0){
+        console.log(i);
         }
-
+    }    
+}
+*/
+function evenNumbers(nb1,nb2){
+    let start;
+    if(nb1%2==1){
+        start= nb1+1;   
+    }else{
+        start=nb1
+    }
+    for(let i=start;i<nb2; i+=2){
+        console.log(i);
+    }
 }
 
-console.log(evenNumbers(5,14))
+evenNumbers(5,14)
+
 /*
 Sur la page wikipedia du PGCD (pas besoin de savoir ce que c'est), on peut trouver l'algorithme récursif suivant :
 ```
@@ -81,4 +94,11 @@ function euclide(a, b){
 À la main, calculer `euclide(6,10)`.
 */
 
-//Le résultat est euclide(10,0), b est égale à zéro, donc le résultat est 6.
+//Le résultat est 
+//b n'est pas égale à 0
+//euclide(10,6), 
+//euclide(6,4)
+//euclide(4,2)
+//euclide(2,0)
+
+//donc le résultat euclide(6,10) est 2
