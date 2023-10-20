@@ -34,51 +34,65 @@ console.log(total)
 */
 //-----------------------
 //Exo 12 boucle
-/* let nb=parseInt(prompt("Définir un nombre à trouver"));
+let nb=parseInt(prompt("Définir un nombre à trouver"));
 let nbTour=10;
 let tentative=0;
 
 for(let i=0; i<10;i++){
     tentative=prompt("Taper un nombre"); 
-
     if(tentative>nb){
-        alert("c'est plus petit!")
+    alert("plus petit")
     }else if(tentative==nb){
-        alert("Ton entrainement a payé! Tu l'as trouvé en: "+i+" coups!" );
+        console.log("Ton entrainement a payé");
         i = 10;
     }else{
-        alert("C'est plus grand!")
+    alert("plus grand")
+    }
+}    
+    if(tentative!=nb || tentative>nbTour){
+        console.log("Tu es un mauvais mentaliste")
     }
 
-if(tentative!=nb || i>nbTour){
-    alert("Tu es un mauvais mentaliste")
-}
-} */
-//------------------------------
-//Exo 13 Boucles
-
-let lanceBanq=0;
-let lanceJoueur=0;
-let scoreBanq=0;
-let scoreJoueur=0;
-let tour=0;
-while(tour<5){
-    lanceBanq=Math.floor(Math.random() *6 )+1;
-    alert("La banque fait: "+lanceBanq+"")
-    lanceJoueur=Math.floor(Math.random() *6 ) +1;
-    alert("Vous avez fait: "+lanceJoueur+"")
-    if(lanceJoueur>lanceBanq){
-        scoreJoueur++;
-    }if(lanceJoueur==lanceBanq){
-        scoreJoueur+=2;
-    }if(lanceJoueur<lanceBanq){
-        scoreBanq++
+//Correction complète avec WHILE
+/*//nombre random à trouver
+let nbrATrouve = numberRandom(100);
+console.log(nbrATrouve);
+//nombre de tour de jeu
+let tour = 1;
+//première tentative
+let nbrTrouve = prompt("Saisir le nombre à trouver");
+//boucle pour le jeu
+while(nbrATrouve != nbrTrouve && tour < 10){
+    //condition si le nombre est trop grand
+    if(nbrTrouve > nbrATrouve){
+        alert("Saisir un nombre plus petit");
     }
-    tour++
+    //condition si le nombre est trop petit
+    if(nbrTrouve < nbrATrouve){
+        alert("Saisir un nombre plus Grand");
+    }
+    //incrémenter le tour
+    tour++;
+    //redemander la saisie d'un nombre
+    nbrTrouve = prompt("Saisir le nombre à trouver");
 }
-if(scoreJoueur>scoreBanq){
-    alert("Vous avez gagné avec : "+scoreJoueur+" point")
-}else{
-    alert("La banque gagne avec un score de: "+scoreBanq+" point")
+//condition de victoire
+if(nbrATrouve==nbrTrouve){
+    alert("Bravo tu as gagné en : "+tour+" tours");
 }
- 
+//condition de défaite
+if(tour > 9){
+    alert("Vous avez perdu vous pouvez changer de métier !");
+}
+//fonction qui génére un nombre random
+function numberRandom(nbr){
+    return Math.floor((Math.random() * nbr) + 1);
+}
+*/
+//---------------------------
+//Exo 13 boucle
+
+let banque=0;
+let joueur=0;
+
+
