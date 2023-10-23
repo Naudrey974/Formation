@@ -15,21 +15,44 @@ console.log("Le prix total est égal à : "+total);
 alert("Le prix total est égal à : "+total); */
 
 
-const totaldef=document.querySelector('#resultat');
+
 function calculer(){
+    //récupération de la valeur
+    const quantite = parseInt(document.querySelector('#quantite').value);
+    //récuparion de l'attribut resultat
+    let resultat = document.querySelector('#resultat');
+    //prix total
     let total = 0;
-let prixChoco = [1.4, 1.3, 1.20];
-const quantite=document.querySelector('#quantite');
-
-    if(quantite.value > 0 && quantite.value <= 10){
-        total = quantite.value * prixChoco[0];
+    const msg = "Le prix total est égal à : ";
+    //prix des chocolatines
+    let prixChoco = [1.4, 1.3, 1.20];
+    //test si quantité est vide
+    if(quantite ==""){
+        total = "Veuillez renseigner le nombre de chocolatine";
     }
-    else if(quantite.value >= 11 && quantite.value <= 20){
-        total = (10*prixChoco[0])+((quantite.value-10)*prixChoco[1]);
+    //test si quantité n'est pas un nombre
+    if(isNaN(quantite)){
+        total = "Veuillez saisir une valeur numérique";
     }
-    else{
-        total = (10*prixChoco[0])+(10*prixChoco[1])+((quantite.value-20)*prixChoco[2]);
+    //test si quantité est égal à 0 ou inférieure
+    if(quantite == 0 || quantite < 0){
+        total = "Veuillez saisir une valeur supérieure à 0";
     }
+    //test si quantité est un nombre
+    if(!isNaN(quantite) && quantite !=0 && quantite > 0){
+        //tester le prix pour la quantité comprise entre 1 et 10
+        if(quantite > 0 && quantite <= 10){
+            total = msg+quantite * prixChoco[0]+" €";
+        }
+        //tester le prix pour une quantité comprise entre 1 et 20
+        else if (quantite >= 11 && quantite <= 20){
+            total = msg+(10*prixChoco[0])+( quantite-10)*prixChoco[1]+" €";
+        }
+        //tester le prix pour une quantité supérieure 
+        else{
+            total = msg+(10*prixChoco[0])+(10*prixChoco[1])+(quantite-20)*prixChoco[2]+" €";
+        }
+    }
+    //afficher le résultat
+    resultat.textContent = total;
 }
-
-totaldef.textContent=total;
