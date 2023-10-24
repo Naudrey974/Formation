@@ -1,18 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="./scriptDom18.js"async></script>
-    <title>Document</title>
+    <script src="./scriptDom18.js" async></script>
+    <title>Exercice 18 DOM</title>
 </head>
 <body>
-    <h1>Liste des tâches</h1>
-    <input type="text" id="task">
-    <button onclick="addTask()" id="add">Ajouter du texte</button>
-    <button onclick="delAllTask()" id="delAllTask">Supprimer tout</button>
-    <button onclick="reload()" id="reload">Recharger la page</button>
+    <h1>Liste des tâches :</h1>
+    <label for="task">Saisir le titre de la tâche</label>
+    <input type="text" name="task" id="task">
+    <input type="button" value="Ajouter" onclick="addTask()">
+    <input type="button" value="Supprimer Tout" onclick="delAllTask()">
+    <input type="button" value="Recharger" onclick="reload()">
     <div id="tasks"></div>
-    
 </body>
 </html>
