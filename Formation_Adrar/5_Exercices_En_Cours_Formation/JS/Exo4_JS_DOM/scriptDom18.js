@@ -47,16 +47,22 @@ function deleteTask(e){
 }
 
 
-let statut=true;
+
  //function pour mettre à jour le texte de la tache courante
+let statut=true;
 function updateTask(e){
-   
+
     if(statut){ 
+    //recuperation de la valeur de la tâche (paragraphe)
     const paragraphe=e.previousElementSibling.textContent;
-    
+    //création de l'élément "input"
     const textInput=document.createElement('input');
     textInput.setAttribute('type','text');
-    e.parentNode.replaceChild(textInput,e.previousElementSibling);
+    //remplacer le paragraphe par l'input
+    e.parentNode.replaceChild(textInput,e.previousElementSibling);//ici on ne peut pas utilise "paragraphe" car elle contient "textContent", on a besoin de la position de l'enfant donc e.previousElementSibling ou e.parentNode.firstChild
+    //assigner la valeur
+    e.previousElementSibling=paragraphe;
+    //changer la valeur du statut
     statut=false
 }else{
     const textInput2=e.previousElementSibling.value;
