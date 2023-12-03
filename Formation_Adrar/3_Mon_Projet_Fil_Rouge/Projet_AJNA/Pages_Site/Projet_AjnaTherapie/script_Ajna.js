@@ -9,11 +9,10 @@ closeBtn.onclick = closeNav;
 
 /* Ouvrir la navigation latérale sur 200px */
 function openNav() {
-  sidenav.classList.toggle("active");
+  sidenav.classList.add("active");
 }
 
-/* Fermer la navigation latérale en la passant à 0px */
-/* function closeNav() {
+ /*Fermer la navigation latérale en la passant à 0px */
+ function closeNav() {
   sidenav.classList.remove("active");
 } 
- */

@@ -124,8 +124,9 @@ header{
 } 
 /* Mise en page des articles */
 .corp{
-    background-image: url("ImagesAjna/image1.svg"); 
+    background: url("ImagesAjna/image1.svg"), lightgray 50%;
     background-repeat: no-repeat;
+
 }
 
 /* @media only screen and (max-width:700px) {
