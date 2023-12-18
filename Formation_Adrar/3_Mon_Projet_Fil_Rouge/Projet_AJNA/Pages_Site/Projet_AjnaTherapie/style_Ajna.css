@@ -1,5 +1,5 @@
 
-
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@500&family=Julius+Sans+One&family=Hind:wght@500&family=Poppins:wght@500&display=swap');
 
 
 body{
@@ -76,7 +76,7 @@ header{
     height: 100%;
     width: 250px;
     position: fixed;/*ne bouge pas*/
-    z-index: 1; /*reste en haut*/
+    z-index: 3; /*reste en haut*/
     top: 0;
     right: -250px;
     background-color: #EEE2CF;
@@ -123,11 +123,11 @@ header{
     padding-right: 70px;
 } 
 /* Mise en page des articles */
-.corp{
-    background: url("ImagesAjna/image1.svg"), lightgray 50%;
+/* .corp{
+    background: url("ImagesAjna/image1.svg");
     background-repeat: no-repeat;
 
-}
+} */
 
 /* @media only screen and (max-width:700px) {
     .articles{
@@ -151,50 +151,51 @@ header{
 .articles > div{
     color: #f5f5f5;
     background-color: #121b2fcf;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    padding-left: 5vw;
+    padding-right: 5vw; 
+    
 }
 
+
 .section > h1{
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family:'Julius Sans One', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 180%;
     color: #D5B584;
-    width: 40vw;
-    text-align: center;    
+    text-align: center;
+    font-weight: 900;
+
 }
 .section > h3{
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family:'Julius Sans One', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 180%;
     color: #D5B584;
-    width: 40vw;
-    text-align: center;    
+    text-align: center;  
+    font-weight: 900;  
 } 
 .section > h2{
-    font-family:'Calibri','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande';
-    font-size: 120%;
-    width: 40vw;
+    font-family:'Poppin','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande';
+    font-size: 150%;
     text-align: center;    
 }
 .section > p{
-    font-family:'Calibri','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande';
+    font-family:'Hind','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande';
     font-size:100%;
-    width: 40vw;
     text-align: justify;
-    margin-top: 10px;  
+    margin-top: 5%;  
 }
 
 /* Style du bouton */
 .section > button{
-    font-family:'Calibri', 'Trebuchet MS', sans-serif;
+    font-family:'Poppin', 'Trebuchet MS', sans-serif;
     font-size:100%;
     display: inline-block;
     text-align: center;
     cursor: pointer;
     border-radius: 7px ;
     color:#f5f5f5 ;
-    background-color: #789896;
+    background-color: #be985f;
     box-shadow: none;
     padding-right: 15px;
     padding-left: 15px;
@@ -203,13 +204,21 @@ header{
 .section > button:hover{
     background-color: #416E99;
 }
-
+/*Disparition de l'illustration au responsive*/
+@media screen and (max-width:900px) {
+    #illustration{
+        display: none;
+    }
+}
 
 /* mise en page de la galerie */
 
 .menu > img{
     width: 248px;
     height: 200px;
+}
+.menu{
+    padding: 1vw;
 }
 .galerie{
     display: grid;
@@ -223,32 +232,37 @@ header{
 }
 
 .menu > h2{
-    font-family:'Calibri', 'Trebuchet MS', sans-serif;
+    font-family:'Hind', 'Trebuchet MS', sans-serif;
     color:#f5f5f5 ;
     font-size: large;
     text-align: center;
     margin-top: 10px; 
 }  
 
+
+/*Mise en page footer*/
+
+
 .listFooter{
     margin-top: 50px;
     margin-bottom: 50px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 11vw 11vw 11vw 33vw 33vw;
     align-items:first baseline;
 }
-
-/*Mise en page footer*/
-
+ 
+/* @media screen and (max-width:600px) {
+    .listFooter{
+        grid-template-columns: 50vw 50vw 50vw;
+    }
+}
+ */
 .iconFooter{
-    width: 5vw;
-    height: 5vh;
+    width: 4vw;
+    height: 4vh;
 }
 
-.listFooter{
-    display: grid;
-    grid-template-columns: 11vw 11vw 11vw 33vw 33vw;
-}
+
 #fb{
     grid-column: 1;
     grid-row: 2;
