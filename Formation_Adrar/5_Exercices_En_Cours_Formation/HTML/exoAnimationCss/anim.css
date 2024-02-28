@@ -1,0 +1,44 @@
+div{
+    display: grid;
+    grid-template-columns: 3,1fr;
+    grid-template-rows: 3,1fr;
+    margin-top: 30vw;
+    transition: transform 5s ease;
+}
+
+#fleur{
+    border: solid black 2px;
+    height: 30vw;
+    width: 20vw;
+    grid-column: 2;
+    
+    
+
+}
+
+#fleur:hover{
+    transform: scale(2);
+}
+
+#fleur:active{
+    transform: rotate(180deg);
+}
+
+#pizza{
+    height: 30vw;
+    width: 30vw;
+}
+
+#pizza:hover{
+    transform: skewX(40deg);
+}
+
+#pizza:active{
+    transform: translateX(200px) translateY(50px) rotate(95deg);
+    transition: transform 5s ease;
+}
+
+p{
+    grid-row: 3;
+    transform: translate(20px) scale(0.5) rotate(35deg) skewY(10deg);
+}

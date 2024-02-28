@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .maClasseHello {
+            background-color: steelblue;
+            font-family: Impact;
+            color: beige;
+        }
+        .maClasseWorld {
+            background-color: rgb(200, 0, 255);
+            color: chartreuse;
+        }
+    
+    </style>
+
+</head>
+<body>
+    <div id="monApp">
+        <div class="m-3">
+        <div>
+            <input  type="text" class="form-control" v-model="valeurInput1" >
+    
+            <h1 class="form-label mt-1"  >
+            Hello World (class dynamique)
+            </h1>
+        </div>
+        <div class="mb-3">
+            <input  type="text" class="form-control" v-model="valeurInput2"/>
+            <h1 class="form-label mt-1" >
+            Hello World (couleur dynamique)
+            </h1>
+        </div>
+        <div class="mb-3 form-check"></div>
+        <button  class="btn btn-primary">
+            Afficher 1er Titre
+        </button>
+        </div>
+    </div>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="DynamicStyle.js"></script>
+</body>
+</html>

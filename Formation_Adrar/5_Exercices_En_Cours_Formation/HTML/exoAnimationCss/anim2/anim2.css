@@ -1,0 +1,68 @@
+h1{
+    color:red;
+    transition: hover 5s ease;
+    position: relative;
+    left: -400px;
+}
+
+h1:hover{
+    color: green;
+}
+
+p{
+    transition: transform 5s ease-in-out;
+    animation-name: para;
+    animation-duration: 1s;
+}
+
+
+p:active{
+    transform: rotate(50turn);
+}
+
+h1{
+    animation-name: titre;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes titre{
+    0%{
+        transform: translate(0px)
+    }
+    50%{
+        transform:translate(300px)
+    }
+    100%{
+        transform: translate(400px);
+    }
+}
+
+@keyframes para{
+    0%{
+        transform: scale(0);
+    }
+    25%{
+        transform: scale(0.25);
+    }
+    50%{
+        transform: scale(0.5);
+    }
+    75%{
+        transform: scale(0.75);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+@keyframes button1{
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(10deg);
+    }
+    100%{
+        transform: rotate(-10deg);
+    }
+}
