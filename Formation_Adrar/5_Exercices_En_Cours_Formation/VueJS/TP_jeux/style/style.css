@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(/images/background.jpg);
+}
+i {
+  color: rgb(224, 224, 15);
+  font-size: 5rem;
+}
+h1 {
+  font-size: 5rem;
+}
+
+.lifeBar {
+  width: 100%;
+}
+
+.endGame {
+  width: 99vw;
+  min-height: 200vh;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: rgba(0, 0, 0, 0.411);
+}
+
+#animation {
+  animation: grow 0.35s ease infinite alternate;
+}
+@keyframes grow {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-20px);
+  }
+}
+
+#animation2 {
+  animation: hithere 1s ease infinite;
+}
+@keyframes hithere {
+  30% {
+    transform: scale(1.2);
+  }
+  40%,
+  60% {
+    transform: rotate(-20deg) scale(1.2);
+  }
+  50% {
+    transform: rotate(20deg) scale(1.2);
+  }
+  70% {
+    transform: rotate(0deg) scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

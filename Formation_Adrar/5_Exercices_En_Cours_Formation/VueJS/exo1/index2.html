@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS v5.2.0-beta1 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"  integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+<body id="app">
+    <h2>ON AFFICHE</h2>
+    <p>{{test}}</p>
+    <p>{{compte}}</p>
+    <p>{{joliTab}}</p>
+    <p>{{joliTab2}}</p>
+    <p>{{joliTab2.nb1}}{{joliTab2.nb2}}{{joliTab2.nb3}}{{joliTab2.nb4}}{{joliTab2.nb5}}{{joliTab2.nb6}}</p>
+
+    <h2>LES METHODES</h2>
+    <p>{{affichageText()}}</p>
+
+    <div id="bookListApp" class="card">
+        <!-- Ici on relie l'attribut href avec notre variable leLien -->
+        <a v-bind:href="leLien" class="text-center">LIEN DYNAMIQUE</a>
+        <!-- Notation raccourcie -->
+        <a :href="leLien" class="text-center">LIEN DYNAMIQUE</a>
+    </div>
+    
+    <!-- script pour contacter VUE -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="app.js"></script>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+</body>
+</html>

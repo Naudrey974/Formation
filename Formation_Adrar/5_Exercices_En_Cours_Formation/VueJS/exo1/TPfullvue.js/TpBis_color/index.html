@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS v5.2.0-beta1 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"  integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <style>
+        .class1 {
+        background-color: mediumslateblue;
+        }
+        .class2 {
+        background-color: chartreuse;
+        }
+    </style>
+</head>
+<body id="app">
+   
+    
+    <!-- <div id="monApp">
+        <div class="row row-cols-1 row-cols-md-3 g-4 m-3 justify-content-center">
+        <div class="col">
+            <div class="card" @click="selectionCard(1)" :style="{backgroundColor: selectCard1 ==true ? 'red':'aqua' }">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+            </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card" @click="selectionCard(2)" :style="{backgroundColor: selectCard2 ? 'green':'violet' }">
+                <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+            </div>
+            </div>
+        </div>
+        </div>-->
+        <!-- Ici on a rangé plusieurs modif dans un objet que l'on binder directement -->
+        <!--<div :style="styleObject">Cool</div>
+    </div> -->
+
+
+
+    <!-- ------------------
+    version avec class css
+    ------------------ -->
+
+    <div id="monApp">
+                
+        <div class="row row-cols-1 row-cols-md-3 g-4 m-3 justify-content-center">
+        <div class="col">
+            <div class="card" @click="selectionCard(1)" :class="{class1: selectCard1 ?true : false , class2: selectCard1?false : true}">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+            </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card" @click="selectionCard(2)" :class="{class2: selectCard2 }">
+                <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+            </div>
+            </div>
+        </div>
+        </div>
+        <!-- Ici on a rangé plusieurs modif dans un objet que l'on binder directement -->
+        <div :style="styleObject">Cool</div>
+    </div>
+
+
+
+    <!-- script pour contacter VUE -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="app.js"></script>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+</body>
+</html>
