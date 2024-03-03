@@ -296,3 +296,122 @@ header{
     justify-items: center;
     text-align: center; 
 }
+
+/*Mise en page corp formulaire*/
+
+#formulaire{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    color:#f5f5f5 ;
+    justify-items: center;
+    align-items:center;
+    margin:5vw;
+    background-image: url(ImagesAjna/yoga-silhouette-coucher-soleil-fond.jpg);
+    background-size: cover;
+}
+#bgContact{
+    background: rgba(0, 0, 0, 0.4);
+    size: 50vw;
+}
+
+#adresse_contact > h2{
+    font-family:'Poppin','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande';
+    font-size: 2vw;
+    text-align: center;
+    color: #f0ece6;    
+
+}
+#adresse_contact > p{
+    align-items: center;
+    font-size: 1,5vw;
+    text-align: center; 
+    text-decoration:none;
+    color: #EEE2CF;     
+}
+
+#mailAjna{
+    color: #EEE2CF;
+}
+
+/*Mise en forme input formulaire*/
+#contactez-moi {
+    
+    padding-left: 5vw;
+    padding-top: 3vw;
+    align-items: justify center;
+    background: rgba(0, 0, 0, 0.6);
+}
+#contactez-moi > h1{
+    font-family:'Julius Sans One', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 600;
+    color:#EEE2CF;
+}
+#contactez-moi > p{
+    font-family: 'Hind', 'Trebuchet MS', sans-serif;
+    color: #EEE2CF;
+    text-align: first baseline;
+    margin-right: 12vw;
+}
+
+form div {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    /*min-height: 83px;*/
+    margin-top: 25px;
+    }
+    
+form div > label {
+    margin-bottom: 4px;
+    font-size: 1,5vw;
+    color: #EEE2CF;
+    }
+    
+form div > input, form div > textarea {
+    background-color: #EEE2CF;
+    border: none;
+    border-radius: 5px;
+    font-size: 1vw;
+    font-weight: 500;
+    font-family: 'Hind', 'Trebuchet MS', sans-serif;
+    box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.25);
+    }
+    
+form div > input{
+    height: 2vw;
+    padding-left: 2vw;
+    }
+    
+    
+form div > textarea {
+    height: 15vw;
+    padding: 1vw 0vw 0vw 0,5vw;
+    }
+    
+form div > input::placeholder, form div > textarea::placeholder {
+    color: #818181;
+    
+    }
+form div > textarea::placeholder {
+    padding-left: 2vw;
+}
+    
+    
+form div:last-child {
+    align-items:center;
+    margin-top: 20px;
+    }
+    
+form button {
+    font-family:'Poppin', 'Trebuchet MS', sans-serif;
+    font-size:100%;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 7px ;
+    color:#f5f5f5 ;
+    background-color: #be985f;
+    box-shadow: none;
+    padding-right: 15px;
+    padding-left: 15px;
+    }
