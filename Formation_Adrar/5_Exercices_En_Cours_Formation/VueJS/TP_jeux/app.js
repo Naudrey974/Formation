@@ -28,6 +28,7 @@ const app = Vue.createApp({
     };
   },
 
+
   methods: {
     // Fonction Combat
     attackAdversaire(value) {
@@ -99,6 +100,7 @@ const app = Vue.createApp({
     vieJoueur(hp) {
       if (hp <= 0) {
         this.vieJoueur = 0;
+        // Déclenchement d'un audio
         loosesound = new Audio('./sound/loose.mp3');
         loosesound.play();
         this.message = 'Oh non, tu as perdu... Ré-essayer?';

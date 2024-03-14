@@ -44,12 +44,12 @@ bt.addEventListener('click', ()=>{
     let url = `https://api.openweathermap.org/data/2.5/weather?q=${ville}&appid=6f88826d767f323ad19cd282444924e9`;
     //fonction récupérer la météo 
 
-        const meteo = fetch(url).then(async response =>{
+    const meteo = fetch(url).then(async response =>{
         //récupération du json 
-        const json = await response.json(); //"await" pour attendre la réponse avant de l'utiliser
-const icon=document.getElementById('icon');
+    const json = await response.json(); //"await" pour attendre la réponse avant de l'utiliser
+    const icon=document.getElementById('icon');
         //affichage du json dans la console
-    console.log(response);//pour trouver l'attribut de l'erreur404 en déroulant la ligne du console.log
+    console.log(json);//pour trouver l'attribut de l'erreur404 en déroulant la ligne du console.log
 
     //Gestion de l'erreur 404
     if(response.status===404){  //===pour vérifier le type également
